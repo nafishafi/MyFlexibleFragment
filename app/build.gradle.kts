@@ -7,6 +7,10 @@ android {
     namespace = "com.dicoding.myflexiblefragment"
     compileSdk = 34
 
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+
     defaultConfig {
         applicationId = "com.dicoding.myflexiblefragment"
         minSdk = 24
@@ -45,4 +49,5 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+    implementation(libs.androidx.fragment.ktx)
 }
